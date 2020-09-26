@@ -86,26 +86,16 @@
             const depositNumber = parseFloat(depositAmount);
 
 
-            // const currentDeposit = document.getElementById('currentDeposit').innerText;
-            // const currentDepositNumber = parseFloat(currentDeposit);
-            // const totalDeposit = depositNumber + currentDepositNumber;
-            // document.getElementById('currentDeposit').innerText = totalDeposit;
+            const currentDeposit = document.getElementById('currentDeposit').innerText;
+            const currentDepositNumber = parseFloat(currentDeposit);
+            const totalDeposit = depositNumber + currentDepositNumber;
+            document.getElementById('currentDeposit').innerText = totalDeposit;
 
 
-            // const balance = document.getElementById('currentBalance').innerText;
-            // const balanceNumber = parseFloat(balance);
-            // const totalBalance = depositNumber + balanceNumber;
-            // document.getElementById('currentBalance').innerText = totalBalance;
-
-            function updateSpanTxt(amount, depositNumber) {
-                const balance = document.getElementById(amount).innerText;
-                const balanceNumber = parseFloat(balance);
-                const totalBalance = depositNumber + balanceNumber;
-                document.getElementById(amount).innerText = totalBalance;
-            }
-
-            updateSpanTxt('currentBalance', depositNumber);
-            updateSpanTxt('currentDeposit', depositNumber);
+            const balance = document.getElementById('currentBalance').innerText;
+            const balanceNumber = parseFloat(balance);
+            const totalBalance = depositNumber + balanceNumber;
+            document.getElementById('currentBalance').innerText = totalBalance;
 
             // value zero
             document.getElementById('depositAmount').value = "";
